@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar Sintomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1>Avaliar Sintomas</h1>
+    </header>
+    <section>
+        <div id="container">
+           <p>O que é <b>"Avaliar Sintomas"</b>?
+            O <b>“Avaliar Sintomas”</b> é uma funcionalidade que permite ao cidadão avaliar os seus sintomas e obter informações e conselhos adequados ao seu problema de saúde não emergente.<br><br>
+            
+            É importante saber que <b>“Avaliar Sintomas”</b>:<br><br>
+            
+            Não é uma ferramenta de diagnóstico clínico.
+            Não é uma consulta médica.
+            Não substitui os cuidados de saúde de um profissional.
+            Para garantir a sua segurança o <b>“Avaliar Sintomas”</b> começa por excluir as situações mais graves e só depois fornece informações ou conselhos. Ao tomar conhecimento aceita os termos de utilização.
+            </p>
+            <button id="action-btn" value="aceitar" class="btn" onclick="questionario">Continuar e aceitar</button> 
+            <button id="btn1" class="btn1" value="sair" onclick="exit">Não, é sair da página</button>
+        </div>
+
+         <form name="quiz" id="quiz">
+           <div>
+            <h1>Vamos avaliar os sintomas</h1>
+              
+            <label for="nome">Nome:</label> <input type="text" id="name" name="user_nome" maxlength="15">
+            <label for="idade">Idade:</label> <input type="number" id="idade" min="0" max="120" name="user_idade">
+
+            <p>Você teve contato com algum portador de covid nas ultimos 14 dias</p>
+            <p><input type="radio" name="question1" value="Sim"> Sim</p>
+            <p><input type="radio" name="question1" value="Nao"> Não</p>
+            <p><input type="radio" name="question1" value="indeciso"> Não tenho a certeza.</p>
+         </div>
+         <div>
+            <p>Es do grupo de risco</p>
+            <p><input type="radio" name="question2" value="Sim"> Sim</p>
+            <p><input type="radio" name="question2" value="Nao"> Não</p>
+
+        </div>
+        <div>
+            <p>Tem dificuldade pra respirar</p>
+            <p><input type="radio" name="question3" value="Sim"> Sim</p>
+            <p><input type="radio" name="question3" value="Nao"> Não</p>
+
+        </div>
+        <div>
+            <p>Tem febre?</p>
+            <p><input type="radio" name="question4" value="Sim"> Sim</p>
+            <p><input type="radio" name="question4" value="Nao"> Não</p>
+
+        </div>
+        <div>
+            <p>Dores no corpo e cansaço?</p>
+            <p><input type="radio" name="question5" value="Sim"> Sim</p>
+            <p><input type="radio" name="question5" value="Nao"> Não</p>
+
+        </div>
+        <input type="button" name="" value="Avaliar Sintomas" onclick="check()">
+         </form>
+    </section> <br>
+    <footer> 
+        <img src="https://atenas.embaixadaportugal.mne.gov.pt/images/noticias/avisos/covid19/i046905.jpg" alt="dgs">
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
